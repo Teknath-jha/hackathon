@@ -20,11 +20,6 @@ const user = require("./routes/user");
 //Using routes
 app.use("/api/v1", post);
 app.use("/api/v1", user);
-__dirname = path.resolve();
-app.use(express.static(path.join(__dirname, "../frontend/build")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
-});
 
 module.exports = app;
