@@ -205,9 +205,9 @@ const Post = ({
       </button>
 
       <div className="postFooter">
-        <Button onClick={handleLike}>
+        {/* <Button onClick={handleLike}>
           {liked ? <Favorite style={{ color: "red" }} /> : <FavoriteBorder />}
-        </Button>
+        </Button> */}
         <Button onClick={handleUpVote}>
           {upVoted && !downVoted? <ThumbUp style={{ color: "red" }} /> : <ThumbUp />}
         </Button>
