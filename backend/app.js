@@ -12,6 +12,7 @@ if (process.env.NODE_ENV !== "production") {
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true })); //else use body parser
 app.use(cookieParser());
+app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 //Importing Routes
 const post = require("./routes/post");
@@ -23,7 +24,7 @@ app.use("/api/v1", user);
 
 // ---------deployment--------------------
 
-__dirname = path.resolve();
+// __dirname = path.resolve();
 
 // else {
 //   app.get("/", (req, res) => {
@@ -31,7 +32,7 @@ __dirname = path.resolve();
 //   });
 // }
 
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
 });
