@@ -1,6 +1,6 @@
 .search {
     height: 100vh;
-    background-image: linear-gradient(to right, #fff5bc, #cec1ff);
+    background-image: linear-gradient(to right, #dabe97, #ef8e0e);
   
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
   }
   
   .searchForm {
-    background-color: white;
+    background-color: #05cffc;
     height: 100%;
     width: 50%;
     border-radius: 30px;

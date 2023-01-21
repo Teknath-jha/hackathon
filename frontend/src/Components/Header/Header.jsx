@@ -10,6 +10,8 @@ import {
   SearchOutlined,
   AccountCircle,
   AccountCircleOutlined,
+  GroupOutlined,
+  Group,
 } from "@mui/icons-material";
 
 const Header = () => {
@@ -32,6 +34,13 @@ const Header = () => {
           <Search style={{ color: "black" }} />
         ) : (
           <SearchOutlined />
+        )}
+      </Link>
+      <Link to="/users" onClick={() => setTab("/users")}>
+        {tab === "/users" ? (
+          <Group style={{ color: "black" }} />
+        ) : (
+          <GroupOutlined />
         )}
       </Link>
       <Link to="/account" onClick={() => setTab("/account")}>

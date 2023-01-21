@@ -36,7 +36,7 @@ const Login = () => {
     <div className="login">
       <form className="loginForm" onSubmit={loginHandler}>
         <Typography vatiant="h3" style={{ padding: "2vmax" }}>
-          News Verifier App
+          Poco - Notion
         </Typography>
 
         <input
@@ -56,7 +56,9 @@ const Login = () => {
         <Link to="/forgot/password">
           <Typography>Forget password</Typography>
         </Link>
-        <Button type="submit">Login</Button>
+        <Button type="submit" color="secondary">
+          <h1>Login</h1>
+        </Button>
         <Link to="/register">
           <Typography>New User</Typography>
         </Link>

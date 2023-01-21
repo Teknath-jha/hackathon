@@ -1,6 +1,6 @@
 .newPost{
     min-height:100vh;
-    background-image:linear-gradient(to right,#fff5bc , #cec1ff);
+    background-image:linear-gradient(to right,#dabe97 , #ef8e0e);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@
 }
 
 .newPostForm{
-    background-color: white;
+    background-color: #05cffc;
     height: 100%;
     width: 50%;
     border-radius:30px;
@@ -46,8 +46,8 @@
 
 
 .newPostForm > input[type="file"]::-webkit-file-upload-button{
-    background-color: rgb(38,63,173);
-    color: white;
+    background-color: rgb(221, 118, 15);
+    color: #060401;
     width: 100%;
     padding: 1vmax;
     border-radius: 30px;

@@ -1,6 +1,6 @@
 .register {
     min-height: 100vh;
-    background-image: linear-gradient(to right, #fff5bc, #cec1ff);
+    background-image: linear-gradient(to right, #b1a97b, #e7a20d);
   
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
   }
   
   .registerForm {
-    background-color: white;
+    background-color: #ef8e0e;
     width: 50%;
     border-radius: 30px;
     box-sizing: border-box;

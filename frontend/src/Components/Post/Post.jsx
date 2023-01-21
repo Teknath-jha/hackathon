@@ -187,7 +187,7 @@ const Post = ({
         }}
         disabled={downVoted ? true : false}
       >
-        <Typography>{upVotes.length} </Typography>
+        {/* <Typography>{upVotes.length} </Typography> */}
       </button>
 
       <button
@@ -201,19 +201,19 @@ const Post = ({
           if (upVoted) setUpVoteUser(!upVoteUser);
         }}
       >
-        <Typography>{downVotes.length} </Typography>
+        {/* <Typography>{downVotes.length} </Typography> */}
       </button>
 
       <div className="postFooter">
         {/* <Button onClick={handleLike}>
           {liked ? <Favorite style={{ color: "red" }} /> : <FavoriteBorder />}
         </Button> */}
-        <Button onClick={handleUpVote}>
+        {/* <Button onClick={handleUpVote}>
           {upVoted && !downVoted? <ThumbUp style={{ color: "red" }} /> : <ThumbUp />}
         </Button>
         <Button onClick={handleDownVote}>
           {downVoted && !upVoted ? <ThumbDown style={{ color: "red" }} /> : <ThumbDown />}
-        </Button>
+        </Button> */}
         <Button onClick={() => setCommentToggle(!commentToggle)}>
           <ChatBubbleOutline />
         </Button>

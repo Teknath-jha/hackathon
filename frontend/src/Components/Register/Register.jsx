@@ -45,7 +45,7 @@ const Register = () => {
     <div className="register">
       <form className="registerForm" onSubmit={submitHandler}>
         <Typography vatiant="h3" style={{ padding: "2vmax" }}>
-          Social App
+          Poco-Notion
         </Typography>
 
         <Avatar
@@ -81,13 +81,13 @@ const Register = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
 
+        <Button disabled={loading} type="submit" color="secondary">
+          <h1>Sign Up</h1>
+        </Button>
+
         <Link href="/">
           <Typography>Already Signed Up?Login Now</Typography>
         </Link>
-
-        <Button disabled={loading} type="submit">
-          Sign Up
-        </Button>
       </form>
     </div>
   );

@@ -1,0 +1,15 @@
+.homeright {
+  padding: 1vmax;
+  margin: 1vmax;
+}
+.usersPage {
+  background-color: #ef8e0e;
+  margin: 1vmax;
+  border-radius: 29px;
+}
+
+@media screen and (max-width: 600px) {
+  .homeright {
+    grid-template-columns: 2fr 1fr;
+  }
+}
